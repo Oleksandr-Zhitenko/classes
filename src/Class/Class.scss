@@ -1,0 +1,38 @@
+$colors:
+  "1" #3FC7EB,
+  "2" #AAD372,
+  "3" #C69B6D,
+  "4" #FFFFFF,
+  "5" #F48CBA,
+  "6" #FFF468,
+  "7" #FF7C0A,
+  "8" #8788EE;
+  
+.class {
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0);
+  display: flex;
+  justify-content: center;
+  border: none;
+  align-items: center;
+  font-weight: bold;
+  width: 12.5vh;
+  height: 12.5vh;
+  padding: 20px;
+  color: white;
+  text-transform: uppercase; 
+  transition: transform 0.3s linear,
+  background-color 0.3s linear;
+  // margin: 1px 0 0 1px;
+  @each $index, $color in $colors {
+    &:hover:nth-child(#{$index}) {
+      background-color: $color;
+      color: black;
+  box-shadow: 1px 1px 5px 0 grey;
+
+    } 
+  }
+  &:hover {
+    transform: translateX(20%);
+  }
+}

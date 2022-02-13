@@ -1,7 +1,8 @@
 import React from 'react';
+import './Description.scss';
 
-export const Description = (props) => {
+export const Description = () => {
   return (
-    <div className="starter">{props.class}</div>
+    <div className="description"></div>
   );
 };
