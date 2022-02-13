@@ -1,2 +1,2 @@
 (this["webpackJsonpreact-typescript-starter-pack"]=this["webpackJsonpreact-typescript-starter-pack"]||[]).push([[0],{11:function(t,r,e){"use strict";e.r(r);var c=e(1),n=e.n(c),s=e(3),a=e.n(s),i=(e(8),e(9),e(0)),o=function(t){return Object(i.jsx)("div",{className:"starter",children:t.class})},u=["mage","hunter","warrior","priest","paladin","rogue","druid","warlock"],p=function(){return Object(i.jsx)("div",{className:"starter",children:u.map((function(t){return Object(i.jsx)(o,{class:t},t)}))})};a.a.render(Object(i.jsx)(n.a.StrictMode,{children:Object(i.jsx)(p,{})}),document.getElementById("root"))},8:function(t,r,e){},9:function(t,r,e){}},[[11,1,2]]]);
-//# sourceMappingURL=main.6a002c0a.chunk.js.map
+//# sourceMappingURL=main.50f99c9f.chunk.js.map
