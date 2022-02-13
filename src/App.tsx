@@ -1,27 +1,36 @@
 import React from 'react';
 import './App.scss';
-
-interface Props {
-  onClick: () => void;
-}
-
-export const Provider: React.FC<Props> = React.memo(
-  ({ onClick, children }) => (
-    <button
-      type="button"
-      onClick={onClick}
-    >
-      {children}
-    </button>
-  ),
-);
+import { Description } from './Description/Description';
+// interface Props {
+//   onClick: () => void;
+// }
+const classes = [
+  'mage',
+  'hunter',
+  'warrior',
+  'priest',
+  'paladin',
+  'rogue',
+  'druid',
+  'warlock',
+];
+// export const Provider: React.FC<Props> = React.memo(
+//   ({ onClick, children }) => (
+//     <button
+//       type='button'
+//       onClick={onClick}
+//     >
+//       {children}
+//     </button>
+//   ),
+// );
 
 export const App: React.FC = () => {
   return (
     <div className="starter">
-      <Provider onClick={() => ({})}>
-        <TodoList />
-      </Provider>
+      {classes.map(c => (
+        <Description class={c} key={c} />
+      ))}
     </div>
   );
 };
